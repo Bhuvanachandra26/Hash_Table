@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		String string = "To be or not to be";
+		String string = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
 		String[] words = string.split(" ");
 
 		LinkedHashMap<String, Integer> linkedHashMap = new LinkedHashMap<>();
@@ -23,5 +23,7 @@ public class Main {
 			linkedHashMap.put(word, value);
 		}
 		System.out.println(linkedHashMap);
+		linkedHashMap.remove("avoidable");
+		System.out.println(linkedHashMap.get("avoidable"));
 	}
 }

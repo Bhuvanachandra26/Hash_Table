@@ -46,15 +46,8 @@ public class MyMapNode<K, V> implements Inode<K> {
 	}
 
 	@Override
-	
-	
 	public String toString() {
-		StringBuffer buffer = new StringBuffer();
-		buffer.append("MyNode{key=").append(key).append("}");
-		if(next != null) {
-			buffer.append("->").append(next);
-		}
-		return buffer.toString();
+		return "MyMapNode [key=" + key + ", value=" + value + "]";
 	}
 
 }
